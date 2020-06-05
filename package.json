@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/bugbare/sl-test-fw/issues"
   },
-  "homepage": "https://github.com/bugbare/sl-test-fw#readme"
+  "homepage": "https://github.com/bugbare/sl-test-fw#readme",
+  "devDependencies": {
+    "@wdio/selenium-standalone-service": "^6.1.14",
+    "codeceptjs": "^2.6.5"
+  }
 }
