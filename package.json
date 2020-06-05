@@ -1,0 +1,20 @@
+{
+  "name": "sl-test-fw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bugbare/sl-test-fw.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bugbare/sl-test-fw/issues"
+  },
+  "homepage": "https://github.com/bugbare/sl-test-fw#readme"
+}
