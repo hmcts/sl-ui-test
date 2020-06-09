@@ -33,12 +33,13 @@ jobs:
         # scope: # optional
         # Deprecated. Use node-version instead. Will not be supported after October 1, 2019
         # version: # optional
-    # Run commands on the job's virtual machine
-    - name: Install Dependencies
-      run: npm install
         
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
+    
+    # Run commands on the job's virtual machine
+    - name: Install Dependencies
+      run: npm install
 
     # Runs a single command using the runners shell
     - name: Run tests
