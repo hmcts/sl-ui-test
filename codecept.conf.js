@@ -10,7 +10,19 @@ exports.config = {
   helpers: {
     WebDriver: {
       url: 'https://demo.mcgirrtech.com/HMCTSQA4.6',
-      browser: 'chrome'
+      browser: 'chrome',
+      host: '127.0.0.1',
+      port: 4444,
+      restart: false,
+      windowSize: '1920x1680',
+      desiredCapabilities: {
+        chromeOptions: {
+          args: [ 
+            // "--headless", 
+            "--disable-gpu", 
+            "--no-sandbox" ]
+        }
+      }
     }
   },
   include: {
@@ -20,6 +32,10 @@ exports.config = {
   mocha: {},
   name: 'sl-test-fw',
   plugins: {
+    wdio: {
+      enabled: true,
+      services: ['selenium-standalone']
+    },
     retryFailedStep: {
       enabled: true
     },
