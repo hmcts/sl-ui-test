@@ -1,36 +1,33 @@
-const { I } = inject();
+const { I, login } = inject();
 // Add in your custom step files
-
-Given('I have a defined step', () => {
-  // TODO: replace with your own step
-});
 
 Given('I am on the welcome screen', () => {
   // From "features/access.feature" {"line":7,"column":5}
-  throw new Error('Not implemented yet');
+  I.amOnPage('/');
 });
 
 Given('there is a login box', () => {
   // From "features/access.feature" {"line":8,"column":5}
-  throw new Error('Not implemented yet');
+  I.seeElement(login.fields.loginbox);
 });
 
 Given('I submit my login credentials', () => {
   // From "features/access.feature" {"line":9,"column":5}
-  throw new Error('Not implemented yet');
+  login.sendForm('user18','HMCTStest');
+  I.wait(1);
 });
 
 Given('I am on my personal dashboard', () => {
   // From "features/access.feature" {"line":10,"column":5}
-  throw new Error('Not implemented yet');
+  I.seeElement({ css: 'a[href*="LogoutAction.action"]'});
 });
 
 When('I click on Signout', () => {
   // From "features/access.feature" {"line":11,"column":5}
-  throw new Error('Not implemented yet');
+  I.click({ css: 'a[href*="LogoutAction.action"]'});
 });
 
-Then('I am on the welcome screen', () => {
-  // From "features/access.feature" {"line":12,"column":5}
-  throw new Error('Not implemented yet');
-});
+// Then('I am on the welcome screen', () => {
+//   // From "features/access.feature" {"line":12,"column":5}
+//   throw new Error('Not implemented yet');
+// });
