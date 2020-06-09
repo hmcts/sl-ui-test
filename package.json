@@ -20,5 +20,9 @@
   "devDependencies": {
     "@wdio/selenium-standalone-service": "^6.1.14",
     "codeceptjs": "^2.6.5"
+  },
+  "dependencies": {
+    "@wdio/cli": "^6.1.16",
+    "webdriverio": "^6.1.16"
   }
 }
