@@ -34,15 +34,15 @@ jobs:
         # Deprecated. Use node-version instead. Will not be supported after October 1, 2019
         # version: # optional
     # Run commands on the job's virtual machine
-#     - name: Install Dependencies
-#       run: npm install
+    - name: Install Dependencies
+      run: npm install
         
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
     # Runs a single command using the runners shell
-    - name: Run a one-line script
-      run: echo Hello, world!
+    - name: Run tests
+      run: npx codeceptjs run --steps
 
     # Runs a set of commands using the runners shell
     - name: Run a multi-line script
