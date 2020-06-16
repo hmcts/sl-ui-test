@@ -39,14 +39,14 @@ jobs:
     
     # Run commands on the job's virtual machine
     - name: Install Dependencies
-      run: npm install
+      run: |
+        npm install
+        npm install -g allure-commandline --save-dev
 
-    # Runs a single command using the runners shell
+    # Runs all tests in headless mode runners shell
     - name: Run tests
       run: HEADLESS=true npx codeceptjs run --steps --allure
 
-    # Runs a set of commands using the runners shell
-    - name: Run a multi-line script
-      run: |
-        echo Add other actions to build,
-        echo test, and deploy your project.
+    # Runs a report generation tool
+    - name: Run reporting
+      run: allure generate functional-output -o test-report

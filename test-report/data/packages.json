@@ -1,0 +1,39 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "Access Scheduling and Listings",
+    "children" : [ {
+      "name" : "successful user login and logout",
+      "uid" : "5129cfbc1dd8346f",
+      "parentUid" : "0f43b06928b817d6c0dc9fd7698a03cc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1592321409162,
+        "stop" : 1592321420357,
+        "duration" : 11195
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "0f43b06928b817d6c0dc9fd7698a03cc"
+  }, {
+    "name" : "dashboard:",
+    "children" : [ {
+      "name" : "Login test",
+      "uid" : "21cca4733a1e1166",
+      "parentUid" : "d3eca634014b689dda1e1edfeacbdd9d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1592321420401,
+        "stop" : 1592321426907,
+        "duration" : 6506
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "d3eca634014b689dda1e1edfeacbdd9d"
+  } ],
+  "name" : "packages"
+}

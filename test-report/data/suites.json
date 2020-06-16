@@ -1,0 +1,39 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "Access Scheduling and Listings",
+    "children" : [ {
+      "name" : "successful user login and logout",
+      "uid" : "5129cfbc1dd8346f",
+      "parentUid" : "543eb79adc02081ab37bbaf4f00b802f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1592321409162,
+        "stop" : 1592321420357,
+        "duration" : 11195
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "543eb79adc02081ab37bbaf4f00b802f"
+  }, {
+    "name" : "dashboard:",
+    "children" : [ {
+      "name" : "Login test",
+      "uid" : "21cca4733a1e1166",
+      "parentUid" : "777c064df016707fc187e44aab386a84",
+      "status" : "passed",
+      "time" : {
+        "start" : 1592321420401,
+        "stop" : 1592321426907,
+        "duration" : 6506
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "777c064df016707fc187e44aab386a84"
+  } ],
+  "name" : "suites"
+}
