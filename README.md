@@ -7,4 +7,6 @@ The driver being used is Selenium Webdriver, default is not headless when runnin
 
 ## Running Tests
 ### Headless
-```HEADLESS=true npx codeceptjs run --steps --verbose
+<code>HEADLESS=true npx codeceptjs run --steps</code>
+### Default Browser (Currently Chrome)
+<code>npx codeceptjs run --steps</code>
