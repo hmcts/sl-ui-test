@@ -55,6 +55,6 @@ jobs:
     - name: Archive test artifacts
       uses: actions/upload-artifact@v1
       with:
-        name: functional-output
-        path: functional-output
+        name: test-report
+        path: functional-output/test-report
 
