@@ -8,5 +8,15 @@ The driver being used is Selenium Webdriver, default is not headless when runnin
 ## Running Tests
 ### Headless
 <code>HEADLESS=true npx codeceptjs run --steps</code>
+
 ### Default Browser (Currently Chrome)
 <code>npx codeceptjs run --steps</code>
+
+## Plugins/Extensions
+### BDD Framework
+The project is using the codecept gherkin snippet template in order to manage and maintain a user readable test format in a standardised approach. The language used attempts to stick to D-R-Y principles as much as possible to limit the number of steps, encourage reuse and low maintenance overhead.
+
+This means identify simple user action phrases so that steps and the contaning step definition files are kept to a minimum.
+
+### Page Object Model
+To enhance this low maintenance overhead objective, the page object model snippet plugin for codeceptjs has also been added.
