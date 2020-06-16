@@ -2,3 +2,4 @@ sl-test-framework.code-workspace
 node_modules/
 package-lock.json
 functional-output/
+test-report/
