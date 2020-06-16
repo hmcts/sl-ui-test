@@ -5,7 +5,7 @@ const { setHeadlessWhen } = require('@codeceptjs/configure');
 setHeadlessWhen(process.env.HEADLESS);
 
 exports.config = {
-  output: './output',
+  output: './functional-output',
   helpers: {
     WebDriver: {
       url: 'https://demo.mcgirrtech.com/HMCTSQA4.6',
@@ -46,6 +46,8 @@ exports.config = {
     },
     retryFailedStep: {
       enabled: true
+    },
+      allure: {
     }
   },
   tests: './*_test.js',
