@@ -1,9 +1,4 @@
 sl-test-framework.code-workspace
 node_modules/
 package-lock.json
-output/
-functional-output/2cdcf4bc-fc0f-4592-8e9f-e8eed104c408-testsuite.xml
-functional-output/a6d81acb-6f15-4318-8a7c-9c2e18fa8be6-testsuite.xml
-functional-output/c9dcff0a-5b36-478a-9d83-ff5d454c51c3-testsuite.xml
-functional-output/e3d979a5-e209-46ac-9552-347685ad5043-testsuite.xml
-functional-output/wdio-selenium-standalone.log
+functional-output/
