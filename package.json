@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/bugbare/sl-test-fw#readme",
   "devDependencies": {
+    "@wdio/allure-reporter": "^5.22.4",
     "@wdio/selenium-standalone-service": "^6.1.14",
     "codeceptjs": "^2.6.5"
   },
