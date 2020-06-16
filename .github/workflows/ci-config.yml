@@ -45,7 +45,7 @@ jobs:
 
     # Runs all tests in headless mode runners shell
     - name: Run tests
-      run: HEADLESS=true npx codeceptjs run --steps --allure
+      run: HEADLESS=true npx codeceptjs run --steps --plugins allure
 
     # Runs a report generation tool
     - name: Run reporting
