@@ -1,3 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Tue Jun 16 16:30:09 BST 2020","Tue Jun 16 16:30:20 BST 2020","11195","","Access Scheduling and Listings","","Access Scheduling and Listings","successful user login and logout","successful user login and logout",""
-"passed","Tue Jun 16 16:30:20 BST 2020","Tue Jun 16 16:30:26 BST 2020","6506","","dashboard:","","dashboard:","Login test","Login test",""
