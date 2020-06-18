@@ -44,7 +44,7 @@ jobs:
 
     # Runs all tests in headless mode runners shell
     - name: Run tests
-      run: HEADLESS=true npx codeceptjs run --steps --reporter mochawesome  --reporter-options reportDir=functional-output
+      run: HEADLESS=true npx codeceptjs run --steps --reporter mochawesome
 
     # Archive test report as an artifact
     - name: Archive test artifacts

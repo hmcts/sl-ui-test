@@ -30,7 +30,11 @@ exports.config = {
     I: './steps_file.js',
     login: './pages/login.js'
   },
-  mocha: {},
+  mocha: {
+      "reporterOptions": {
+        "reportDir": "functional-output"
+    }
+  },
   bootstrap: null,
   teardown: null,
   hooks: [],
