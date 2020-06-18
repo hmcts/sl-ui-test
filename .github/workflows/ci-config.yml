@@ -40,21 +40,16 @@ jobs:
     # Run commands on the job's virtual machine
     - name: Install Dependencies
       run: |
-        npm install
-        npm install -g allure-commandline --save-dev
+        npm ci
 
     # Runs all tests in headless mode runners shell
     - name: Run tests
-      run: HEADLESS=true npx codeceptjs run --steps --plugins allure
-
-    # Runs a report generation tool
-    - name: Run reporting
-      run: allure generate functional-output -o test-report
+      run: HEADLESS=true npx codeceptjs run --steps --reporter mocha-multi
 
     # Archive test report as an artifact
     - name: Archive test artifacts
       uses: actions/upload-artifact@v1
       with:
-        name: test-report
-        path: test-report
+        name: functional-output
+        path: functional-output
 

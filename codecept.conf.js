@@ -16,10 +16,12 @@ exports.config = {
       windowSize: '1920x1680',
       desiredCapabilities: {
         chromeOptions: {
-          args: [ 
-            // "--headless", 
+          args: [  
             "--disable-gpu", 
             "--no-sandbox" ]
+        },
+        firefoxOptions: {
+          args: []
         }
       }
     }
@@ -28,7 +30,22 @@ exports.config = {
     I: './steps_file.js',
     login: './pages/login.js'
   },
-  mocha: {},
+  mocha: {
+    "reporterOptions": {
+      "codeceptjs-cli-reporter": {
+        "stdout": "./functional-output/console.log",
+        "options": {
+          "steps": true,
+        }
+      },
+      "mochawesome": {
+        "stdout": "-",
+        "options": {
+          "reportDir": "./functional-output"
+        }
+      }
+    }
+  },
   bootstrap: null,
   teardown: null,
   hooks: [],
@@ -46,10 +63,8 @@ exports.config = {
     },
     retryFailedStep: {
       enabled: true
-    },
-      allure: {
     }
   },
   tests: './*_test.js',
   name: 'sl-test-fw'
-}
+};
