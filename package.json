@@ -19,11 +19,13 @@
   "homepage": "https://github.com/bugbare/sl-test-fw#readme",
   "devDependencies": {
     "@wdio/selenium-standalone-service": "^6.1.14",
-    "codeceptjs": "^2.6.5"
+    "codeceptjs": "^2.6.5",
+    "mocha": "^8.0.1"
   },
   "dependencies": {
-    "allure-commandline": "^2.0.0",
     "@wdio/cli": "^6.1.16",
+    "allure-commandline": "^2.0.0",
+    "mochawesome": "^6.1.1",
     "webdriverio": "^6.1.16"
   }
 }

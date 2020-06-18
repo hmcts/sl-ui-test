@@ -41,11 +41,10 @@ jobs:
     - name: Install Dependencies
       run: |
         npm ci
-        npm install -g allure-commandline --save-dev
 
     # Runs all tests in headless mode runners shell
     - name: Run tests
-      run: HEADLESS=true npx codeceptjs run --steps --plugins allure
+      run: HEADLESS=true npx codeceptjs run --steps --reporter mochawesome  --reporter-options reportDir=functional-output
 
     # Runs a report generation tool
     - name: Run reporting

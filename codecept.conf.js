@@ -16,10 +16,12 @@ exports.config = {
       windowSize: '1920x1680',
       desiredCapabilities: {
         chromeOptions: {
-          args: [ 
-            // "--headless", 
+          args: [  
             "--disable-gpu", 
             "--no-sandbox" ]
+        },
+        firefoxOptions: {
+          args: []
         }
       }
     }
@@ -46,10 +48,8 @@ exports.config = {
     },
     retryFailedStep: {
       enabled: true
-    },
-      allure: {
     }
   },
   tests: './*_test.js',
   name: 'sl-test-fw'
-}
+};
