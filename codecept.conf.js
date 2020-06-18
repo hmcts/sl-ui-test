@@ -31,8 +31,19 @@ exports.config = {
     login: './pages/login.js'
   },
   mocha: {
-      "reporterOptions": {
-        "reportDir": "functional-output"
+    "reporterOptions": {
+      "codeceptjs-cli-reporter": {
+        "stdout": "./functional-output/console.log",
+        "options": {
+          "steps": true,
+        }
+      },
+      "mochawesome": {
+        "stdout": "-",
+        "options": {
+          "reportDir": "./functional-output"
+        }
+      }
     }
   },
   bootstrap: null,
