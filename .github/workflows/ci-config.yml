@@ -46,14 +46,10 @@ jobs:
     - name: Run tests
       run: HEADLESS=true npx codeceptjs run --steps --reporter mochawesome  --reporter-options reportDir=functional-output
 
-    # Runs a report generation tool
-    - name: Run reporting
-      run: allure generate functional-output -o test-report
-
     # Archive test report as an artifact
     - name: Archive test artifacts
       uses: actions/upload-artifact@v1
       with:
-        name: test-report
-        path: test-report
+        name: functional-output
+        path: functional-output
 
