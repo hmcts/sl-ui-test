@@ -7,10 +7,12 @@ The driver being used is Selenium Webdriver, default is not headless when runnin
 
 ## Running Tests
 ### Headless
-<code>HEADLESS=true npx codeceptjs run --steps</code>
+Run all End to End feature tests without a browser
+<code>HEADLESS=true npx codeceptjs run --features --reporter mocha-multi --grep "E2E"</code>
 
 ### Default Browser (Currently Chrome)
-<code>npx codeceptjs run --steps</code>
+Run all End to End feature tests with a browser
+<code>npx codeceptjs run --features --reporter mocha-multi --grep "E2E"</code>
 
 ## Plugins/Extensions
 ### BDD Framework
