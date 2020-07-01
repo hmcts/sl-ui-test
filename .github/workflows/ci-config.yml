@@ -44,7 +44,7 @@ jobs:
 
     # Runs all tests in headless mode runners shell
     - name: Run tests
-      run: HEADLESS=true npx codeceptjs run --steps --reporter mocha-multi
+      run: HEADLESS=true npx codeceptjs run --features --reporter mocha-multi --grep "E2E"
 
     # Archive test report as an artifact
     - name: Archive test artifacts
