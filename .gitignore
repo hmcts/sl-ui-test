@@ -2,3 +2,4 @@ sl-test-framework.code-workspace
 node_modules/
 functional-output/
 test-report/
+.idea/
