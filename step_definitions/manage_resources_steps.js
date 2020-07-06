@@ -1,6 +1,3 @@
-var {When} = require('cucumber');
-var {Then} = require('cucumber');
-var {Given} = require('cucumber');
 const { I, login } = inject();
 
 Given(/^the User is on "(.*)" Page$/, function () {
