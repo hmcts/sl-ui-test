@@ -7,7 +7,7 @@ As A... Listing Officer
 I want to manually create patterns
 So that I can apply to simplify session managament
 
-@E2E
+@pending
 @manage_patterns 
 @SLR-452 @SLR-897 @SLR-645
 Scenario: Save a Pattern
@@ -19,7 +19,7 @@ When I create the pattern
 Then the pattern is created
 And the pattern can be viewed in the pattern list view
 
-@E2E
+@pending
 @manage_patterns 
 @SLR-452 @SLR-898 @SLR-645
 Scenario: Assign a Pattern
@@ -27,7 +27,7 @@ Given I want to assign an existing pattern
 When I assign the pattern to a court
 Then the pattern is assigned to a court
 
-@E2E
+@pending
 @manage_patterns 
 @SLR-452 @SLR-892 @SLR-645
 Scenario: Copy a Pattern
@@ -39,7 +39,7 @@ And the name of the pattern is copy pattern
 When I amend a session in the copy pattern pattern
 Then the copy pattern session change is successful
 
-@E2E
+@pending
 @manage_patterns 
 @SLR-452 @SLR-911 @SLR-645
 Scenario: Temporarily suspend a session
@@ -47,7 +47,7 @@ Given I want to temporarily suspend an existing session
 When I suspend the existing session
 Then the existing session is suspended
 
-@E2E
+@pending
 @manage_patterns 
 @SLR-452 @SLR-911 @SLR-645
 Scenario: Temporarily suspend a session
