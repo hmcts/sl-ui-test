@@ -48,7 +48,9 @@ exports.config = {
   },
   bootstrap: null,
   teardown: null,
-  hooks: [],
+  hooks: [
+    'hooks/run_hooks.js'
+  ],
   gherkin: {
     features: './features/*/*.feature',
     steps: ['./step_definitions/steps.js','./step_definitions/manage_resources_steps.js']
