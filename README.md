@@ -24,11 +24,13 @@ This means identify simple user action phrases so that steps and the contaning s
 To enhance this low maintenance overhead objective, the page object model snippet plugin for codeceptjs has also been added.
 
 ## BDD Structure
-* Feature files sit under the *features* folder within their own _feature_ folder.
-* Steps are under _step_definitions
+* Feature files sit under the *features* folder within their own sub-folder.
+* Steps are under _step_definitions_
 * Reporting is produced using mochawesome and outputs to _functional_output_.
 * Page Objects can be found under _pages_.
 * All configuration  is stored in _codecept.conf.js_
+* Pending tag used to skip tests
+
 
 ```
 ├── features
