@@ -1,7 +1,7 @@
-@manage_resources
-@SLR-469  #Epic
-@SLR-665  #Test ID
-@SLR-1015 #Test Story
+# JIRA Feature ID: SLR-347
+# Epic ID:SLR-469
+# Test ID: SLR-665
+# Feature Short Name, Epic ID, User Story ID & Test ID
 
 Feature: Assign, swap and remove resources from sessions and listings
   As A... Resource Allocator
@@ -20,10 +20,12 @@ Feature: Assign, swap and remove resources from sessions and listings
 #2. Search Resource Page - Displays available resources which can then be allocated to Session/Listing
 #3. resources already allocated with Session/Listing cannot be allocated again (disabled)
 
-  Background
-  Given I am logged in as Resource Allocator
+  Background:
+    Given I am logged in as Resource Allocator
 
-  @SLR-839
+  @pending
+  @manage_resources
+  @SLR-347 @SLR-469 @SLR-839 @SLR-665
   Scenario Outline: Identify Judicial Office Available and successful <type> allocation
     Given the User is on "Search Resource" Page
     When  the User searches for "Available", judicial office holder
@@ -34,7 +36,9 @@ Feature: Assign, swap and remove resources from sessions and listings
       | Session |
       | Listing |
 
-  @SLR-840
+  @pending
+  @manage_resources
+  @SLR-347 @SLR-469 @SLR-840 @SLR-665
   Scenario Outline: Identify Judicial Office Holder NOT Available and ensure no double booking
     Given the User is on "Search Resource" Page
     When  the User searches for "Available", judicial office holder
@@ -45,7 +49,9 @@ Feature: Assign, swap and remove resources from sessions and listings
       | Session |
       | Listing |
 
-  @SLR-841
+  @pending
+  @manage_resources
+  @SLR-347 @SLR-469 @SLR-841 @SLR-665
   Scenario Outline: Judicial Office <type> cancellation results in updating the status to Available
     Given the User is on "Search Resource" Page
     When  the User searches for "Available", judicial office holder
