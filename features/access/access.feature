@@ -11,4 +11,3 @@ Feature: Access Scheduling and Listings
     And I am on my personal dashboard
     When I click on Signout
     Then I am on the welcome screen
-
