@@ -30,7 +30,7 @@ To enhance this low maintenance overhead objective, the page object model snippe
 * Page Objects can be found under _pages_.
 * All configuration  is stored in _codecept.conf.js_
 
-.
+```
 ├── features
 │   └── access
 │       └── access.feature
@@ -44,4 +44,5 @@ To enhance this low maintenance overhead objective, the page object model snippe
 ├── step_definitions
 │   └── steps.js
 └── codecept.conf.js
+```
 
