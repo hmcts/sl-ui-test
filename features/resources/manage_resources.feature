@@ -1,7 +1,3 @@
-## JIRA Feature ID: SLR-347
-## Epic ID:SLR-469
-## Test ID: SLR-665
-## Feature Short Name, Epic ID, User Story ID & Test ID
 Feature: Assign, swap and remove Resources from sessions and listings
   As A... Resource Allocator
   I want to assign, swap and remove resources

@@ -27,7 +27,7 @@ To enhance this low maintenance overhead objective, the page object model snippe
 * Feature files sit under the *features* folder within their own sub-folder.
 * Steps are under _step_definitions_ folder within their own sub-folder.
 * Reporting is produced using mochawesome and outputs to _functional_output_.
-* Page Objects can be found under _pages_ within their own sub-folder
+* Page Objects can be found under _pages_ 
 * All configuration  is stored in _codecept.conf.js_
 * Pending tag used to skip tests
 
@@ -42,8 +42,7 @@ To enhance this low maintenance overhead objective, the page object model snippe
 │   |── mochawesome.json
 │   └── console.log
 ├── pages
-│   └── access
-│       └── login_page.js
+│   └── login_page.js
 ├── step_definitions
 │   └── access
 │       └── manage_access_steps.js

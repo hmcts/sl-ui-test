@@ -1,7 +1,3 @@
-# JIRA Feature ID: SLR-281 
-# Test ID: SLR-645
-# Feature Short Name, Epic ID, User Story ID Test ID
-
 Feature: Manage patterns for session/schedules
 As A... Listing Officer
 I want to manually create patterns

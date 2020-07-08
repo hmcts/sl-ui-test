@@ -28,7 +28,7 @@ exports.config = {
   },
   include: {
     I: './steps_file.js',
-    login: './pages/access/login_page.js'
+    login: './pages/login_page.js'
   },
   mocha: {
     "reporterOptions": {
@@ -53,9 +53,7 @@ exports.config = {
   ],
   gherkin: {
     features: './features/*/*.feature',
-    steps: ['./step_definitions/access/manage_access_steps.js',
-            './step_definitions/resources/manage_resources_steps.js',
-           './step_definitions/patterns/manage_patterns_steps.js']
+    steps: './step_definitions/*/*.js'
   },
   plugins: {
     screenshotOnFail: {
