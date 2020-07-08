@@ -1,9 +1,8 @@
-# JIRA Feature ID: SLR-347
-# Epic ID:SLR-469
-# Test ID: SLR-665
-# Feature Short Name, Epic ID, User Story ID & Test ID
-
-Feature: Assign, swap and remove resources from sessions and listings
+## JIRA Feature ID: SLR-347
+## Epic ID:SLR-469
+## Test ID: SLR-665
+## Feature Short Name, Epic ID, User Story ID & Test ID
+Feature: Assign, swap and remove Resources from sessions and listings
   As A... Resource Allocator
   I want to assign, swap and remove resources
   So that I can apply to simplify resources management
@@ -13,6 +12,7 @@ Feature: Assign, swap and remove resources from sessions and listings
 #Q2: Do we have a search Resource page , for selecting "Available","Not Available", judicial office holder ?
 #Q3: How are "Available","Not Available" judicial office holder displayed (Rows of Records etc) ?
 #Q4: How are "Available" judicial office holder booked for a session/listing ?
+#Q5: What is Non Hearing Activity ? How will the System know about the activity ? Who Is it applicable to everyone ?
 
 
 # Assumptions
@@ -25,7 +25,7 @@ Feature: Assign, swap and remove resources from sessions and listings
 
   @pending
   @manage_resources
-  @SLR-347 @SLR-469 @SLR-839 @SLR-665
+  @SLR-347 @SLR-469 @SLR-839 @SLR-887 @SLR-665
   Scenario Outline: Identify Judicial Office Available and successful <type> allocation
     Given the User is on "Search Resource" Page
     When  the User searches for "Available", judicial office holder
@@ -38,7 +38,7 @@ Feature: Assign, swap and remove resources from sessions and listings
 
   @pending
   @manage_resources
-  @SLR-347 @SLR-469 @SLR-840 @SLR-665
+  @SLR-347 @SLR-469 @SLR-840 @SLR-886 @SLR-665
   Scenario Outline: Identify Judicial Office Holder NOT Available and ensure no double booking
     Given the User is on "Search Resource" Page
     When  the User searches for "Available", judicial office holder
@@ -62,3 +62,15 @@ Feature: Assign, swap and remove resources from sessions and listings
       | type    |
       | Session |
       | Listing |
+
+  @pending
+  @manage_resources
+  @SLR-347 @SLR-469 @SLR-885 @SLR-665
+  Scenario Outline: Update Judicial Office Holder Availability Status to NOT available for Non-Hearing Activities
+    Given <NonHearingType> Non-Hearing Activities is taking place
+    When  the user selects Judicial Office Holder for the activity
+    Then  the judicial office holder status becomes "Not Available" again for <type> allocation
+    Examples:
+      |NonHearingType| type    |
+      |Hard          | Session |
+      |Soft          | Listing |
