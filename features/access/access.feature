@@ -4,7 +4,6 @@ Feature: Access Scheduling and Listings
   So that I can access the application
   
   @E2E
-  @pending
   Scenario: successful user login and logout
     Given I am on the welcome screen
     And there is a login box
