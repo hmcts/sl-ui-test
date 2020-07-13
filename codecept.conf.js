@@ -7,6 +7,15 @@ setHeadlessWhen(process.env.HEADLESS);
 exports.config = {
   output: './functional-output',
   helpers: {
+    ResembleHelper : {
+      require: "codeceptjs-resemblehelper",
+      screenshotFolder : "./functional-output/",
+      baseFolder: "./functional-output/screenshots/base/",
+      diffFolder: "./functional-output/screenshots/diff/",
+      prepareBaseImage: true,
+      skipFailure: true,
+      tolerance: 1
+    },
     WebDriver: {
       url: 'https://demo.mcgirrtech.com/HMCTSQA4.6',
       browser: 'chrome',

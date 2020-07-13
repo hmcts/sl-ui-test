@@ -8,10 +8,12 @@ The driver being used is Selenium Webdriver, default is not headless when runnin
 ## Running Tests
 ### Headless
 Run all End to End feature tests without a browser
+
 <code>HEADLESS=true npx codeceptjs run --features --reporter mocha-multi --grep "E2E"</code>
 
 ### Default Browser (Currently Chrome)
 Run all End to End feature tests with a browser
+
 <code>npx codeceptjs run --features --reporter mocha-multi --grep "E2E"</code>
 
 ## Plugins/Extensions
@@ -48,4 +50,5 @@ To enhance this low maintenance overhead objective, the page object model snippe
 │       └── manage_access_steps.js
 └── codecept.conf.js
 ```
-
+## Visual Testing
+We are using the resemble helper to provide a simple visual check between a base image and the current screenshot taken during test execution, any differences will be stored (i.e. the build will not fail, but the differences can be checked post execution)
