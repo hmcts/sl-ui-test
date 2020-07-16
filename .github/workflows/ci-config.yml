@@ -53,3 +53,4 @@ jobs:
         name: functional-output
         path: functional-output
 
+    # Need to host a website for the ALlure reporting to work - using mochawesome fallback solution for reporting in interim
