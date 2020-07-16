@@ -3,7 +3,7 @@ Feature: Access Scheduling and Listings
   I want to be able to use the credentials registered with it
   So that I can access the application
   
-  @E2E
+  @pending @E2E
   Scenario: successful user login and logout
     Given I am on the welcome screen
     And there is a login box
