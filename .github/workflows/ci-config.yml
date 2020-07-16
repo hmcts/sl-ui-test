@@ -44,12 +44,14 @@ jobs:
 
     # Runs all tests in headless mode runners shell
     - name: Run tests
-      run: HEADLESS=true npx codeceptjs run --features --reporter mocha-multi --grep "E2E"
+      run: HEADLESS=true npx codeceptjs run --features --reporter mocha-multi
 
     # Archive test report as an artifact
-    - name: Archive test artifacts
-      uses: actions/upload-artifact@v1
-      with:
-        name: functional-output
-        path: functional-output
+    # - name: Archive test artifacts
+    #   uses: actions/upload-artifact@v1
+    #   with:
+    #     name: functional-output
+    #     path: functional-output
+
+    # Need to host a website for the Allure reporting to work - using mochawesome fallback solution for reporting in interim
 
