@@ -2,7 +2,15 @@ Given(/^I am on judicial office holder Page$/, function () {
     throw new Error('Not implemented yet');
 });
 
-When(/^I add the Retirement Date which is after the hearing date$/, function () {
+Given(/^Hearing are setup$/, function () {
+    throw new Error('Not implemented yet');
+});
+
+Given(/^I have a existing multi\-day hearing$/, function () {
+    throw new Error('Not implemented yet');
+});
+
+When(/^I add the Retirement Date which is after the hearing finish date$/, function () {
     throw new Error('Not implemented yet');
 });
 
@@ -10,7 +18,7 @@ Then(/^judicial office holder can be assigned to a hearing$/, function () {
     throw new Error('Not implemented yet');
 });
 
-When(/^I add the Retirement Date which is before the hearing date$/, function () {
+When(/^I add the Retirement Date which is before the hearing finish date$/, function () {
     throw new Error('Not implemented yet');
 });
 
@@ -18,7 +26,7 @@ Then(/^judicial office holder can't be assigned to a hearing$/, function () {
     throw new Error('Not implemented yet');
 });
 
-When(/^I add the Retirement Date which is same as the hearing date$/, function () {
+When(/^I add the Retirement Date which is same as the hearing finish date$/, function () {
     throw new Error('Not implemented yet');
 });
 
@@ -26,75 +34,18 @@ When(/^I add the Retirement Date which falls in\-between a multiple day hearing$
     throw new Error('Not implemented yet');
 });
 
-Given(/^the User is on create judicial office holder Page$/, function () {
+Given(/^the judicial office holder works Monday to Friday$/, function () {
     throw new Error('Not implemented yet');
 });
 
-Given(/^I add the Retirement Date$/, function () {
+When(/^the hearing matching with the criteria is found$/, function () {
     throw new Error('Not implemented yet');
 });
 
-Given(/^I add the Working Patterns$/, function () {
+Then(/^the judicial office holder can only be assigned to the matching hearing$/, function () {
     throw new Error('Not implemented yet');
 });
 
-Given(/^judicial office holder record is created$/, function () {
+Given(/^the judicial office holder works for 9AM to 2PM on Monday to Thursday$/, function () {
     throw new Error('Not implemented yet');
 });
-
-Given(/^I update the Retirement Date$/, function () {
-    throw new Error('Not implemented yet');
-});
-
-Given(/^I update the Working Patterns$/, function () {
-    throw new Error('Not implemented yet');
-});
-
-Given(/^the record is updated$/, function () {
-    throw new Error('Not implemented yet');
-});
-
-When(/^I delete the record$/, function () {
-    throw new Error('Not implemented yet');
-});
-
-Then(/^the record is deleted$/, function () {
-    throw new Error('Not implemented yet');
-});
-
-Given(/^the User is on hearing Page$/, function () {
-    throw new Error('Not implemented yet');
-});
-
-Given(/^the judicial office holder works for (\d+) hours on Monday$/, function () {
-    throw new Error('Not implemented yet');
-});
-
-When(/^the work pattern is viewed$/, function () {
-    throw new Error('Not implemented yet');
-});
-
-Then(/^judicial office holder Daily and Weekly Working Patterns can be identified$/, function () {
-    throw new Error('Not implemented yet');
-});
-
-Then(/^can only be assigned to a hearing for Monday$/, function () {
-    throw new Error('Not implemented yet');
-});
-
-Then(/^can not be assigned to a hearing for Tuesday to Friday$/, function () {
-    throw new Error('Not implemented yet');
-});
-
-Given(/^the judicial office holder works for (\d+) hours on Monday to Thursday$/, function () {
-    throw new Error('Not implemented yet');
-});
-
-Then(/^can be assigned to a hearing for Monday to Thursday only$/, function () {
-    throw new Error('Not implemented yet');
-});
-
-Then(/^can not be assigned to a hearing for Friday$/, function () {
-    throw new Error('Not implemented yet');
-});
-
