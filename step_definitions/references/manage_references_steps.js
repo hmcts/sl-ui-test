@@ -1,12 +1,9 @@
-var {Then} = require('cucumber');
-var {When} = require('cucumber');
-var {Given} = require('cucumber');
 Given(/^I am on judicial office holder Page$/, function () {
     throw new Error('Not implemented yet');
 });
 
 Given(/^Hearing are setup$/, function () {
-    throw new Error('Not implemented yet');
+
 });
 
 Given(/^I have a existing multi\-day hearing$/, function () {
