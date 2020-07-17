@@ -28,7 +28,3 @@ Feature: Identify Judicial Office Holder Working Patterns and allocate to hearin
     And   the judicial office holder works for 9AM to 2PM on Monday to Thursday
     When  the hearing matching with the criteria is found
     Then  the judicial office holder can only be assigned to the matching hearing
-
-
-
-
