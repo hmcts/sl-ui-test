@@ -8,7 +8,6 @@ Feature: No Hearings after Judicial Office Holder Retirement Date
   Background:
     Given Hearing are setup
 
-#Validation
   @pending
   @manage_references
   @manage_retirement
