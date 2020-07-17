@@ -88,3 +88,4 @@ When(/^I delete the record$/, function () {
 Then(/^the record is deleted$/, function () {
     throw new Error('Not implemented yet');
 });
+
