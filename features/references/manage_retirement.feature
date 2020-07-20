@@ -47,8 +47,3 @@ Feature: No Hearings after Judicial Office Holder Retirement Date
     And  I am on judicial office holder Page
     When I add the Retirement Date which falls in-between a multiple day hearing
     Then judicial office holder can't be assigned to a hearing
-
-
-
-
-

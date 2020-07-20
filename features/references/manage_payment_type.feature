@@ -21,6 +21,3 @@ Feature: Judicial Office Holder as both Salaried and Fee Paid
     And  I update the payment type as Fee Paid
     When judicial office holder can be assigned to a hearing
     Then judicial office holder can be identified as Fee Paid
-
-
-
