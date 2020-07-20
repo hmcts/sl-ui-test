@@ -11,20 +11,24 @@ Feature: Identify Judicial Office Holder Working Patterns and allocate to hearin
   @pending
   @manage_references
   @manage_working_patterns
-  @SLR-330 @SLR-600 @SLR-903 @SLR-798
+  @SLR-330 @SLR-600 @SLR-901 @SLR-903 @SLR-798
   Scenario: Judicial Office Holders can only be allocated to hearings on days of the week that they are working and available
     Given I am on judicial office holder Page
     And   the judicial office holder works Monday to Friday
+    And   the judicial office holder is Full Time
     When  the hearing matching with the criteria is found
     Then  the judicial office holder can only be assigned to the matching hearing
+    And   the judicial office holder can be identified as Full Time
 
   @pending
   @manage_references
   @manage_working_patterns
   @SLR-330 @SLR-600 @SLR-903 @SLR-798
-#    TODO : check for Part Time with BA
   Scenario: Part Time Judicial Office Holders can only be allocated to hearings on day and time of the week that they are working and available
     Given I am on judicial office holder Page
+    And   the judicial office holder is Part Time
     And   the judicial office holder works for 9AM to 2PM on Monday to Thursday
     When  the hearing matching with the criteria is found
     Then  the judicial office holder can only be assigned to the matching hearing
+    And   the judicial office holder can be identified as Part Time
+

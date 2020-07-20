@@ -50,7 +50,7 @@ Given(/^the judicial office holder works for 9AM to 2PM on Monday to Thursday$/,
     throw new Error('Not implemented yet');
 });
 
-Given(/^the User is on create judicial office holder Page$/, function () {
+Given(/^I am on judicial office holder Page$/, function () {
     throw new Error('Not implemented yet');
 });
 
@@ -83,6 +83,70 @@ When(/^I delete the record$/, function () {
 });
 
 Then(/^the record is deleted$/, function () {
+    throw new Error('Not implemented yet');
+});
+
+Given(/^I add all other personal details$/, function () {
+    throw new Error('Not implemented yet');
+});
+
+Given(/^I update all the personal details$/, function () {
+    throw new Error('Not implemented yet');
+});
+
+When(/^all mandatory fields are not entered$/, function () {
+    throw new Error('Not implemented yet');
+});
+
+Then(/^the judicial office holder the record is not saved$/, function () {
+    throw new Error('Not implemented yet');
+});
+
+Given(/^I add Payment Details as Salary$/, function () {
+    throw new Error('Not implemented yet');
+});
+
+Given(/^I update Payment Details as Fee$/, function () {
+    throw new Error('Not implemented yet');
+});
+
+Given(/^I add the payment type as Salaried$/, function () {
+    throw new Error('Not implemented yet');
+});
+
+Given(/^judicial office holder can be identified as Salaried$/, function () {
+    throw new Error('Not implemented yet');
+});
+
+Given(/^I update the payment type as Fee Paid$/, function () {
+    throw new Error('Not implemented yet');
+});
+
+Then(/^judicial office holder can be identified as Fee Paid$/, function () {
+    throw new Error('Not implemented yet');
+});
+
+Given(/^I add them as Part Time$/, function () {
+    throw new Error('Not implemented yet');
+});
+
+Given(/^I update them as Full Time$/, function () {
+    throw new Error('Not implemented yet');
+});
+
+Given(/^the judicial office holder is Full Time$/, function () {
+    throw new Error('Not implemented yet');
+});
+
+Then(/^the judicial office holder can be identified as Full Time$/, function () {
+    throw new Error('Not implemented yet');
+});
+
+Given(/^the judicial office holder is Part Time$/, function () {
+    throw new Error('Not implemented yet');
+});
+
+Then(/^the judicial office holder can be identified as Part Time$/, function () {
     throw new Error('Not implemented yet');
 });
 
