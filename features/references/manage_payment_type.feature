@@ -6,15 +6,15 @@ Feature: Judicial Office Holder as both Salaried and Fee Paid
   So that It can be identified when the judicial office holder is allocated to a hearing as 'Salaried' or 'Fee Paid'.
 
   Background:
-    Given Hearing are setup
+  Given a hearing for tomorrow is created
+  And   a Judicial Holder is created
 
   @pending
   @manage_references
   @manage_payment_type
   @SLR-330 @SLR-600 @SLR-899 @SLR-798
   Scenario: Identify Judicial Office Holder as both Salaried and Fee Paid
-    Given I have a existing multi-day hearing
-    And  I am on judicial office holder Page
+    Given I am on judicial office holder Page
     And  I add the payment type as Salaried
     And  judicial office holder can be assigned to a hearing
     And  judicial office holder can be identified as Salaried

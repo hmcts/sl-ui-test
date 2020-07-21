@@ -6,7 +6,8 @@ Feature: Identify Judicial Office Holder Working Patterns and allocate to hearin
   So that the hours worked each day and the days of the week worked can be applied to the scheduling and listing of hearings.
 
   Background:
-    Given Hearing are setup
+    Given Multi-Day Hearing is created
+    And   a Judicial Holder is created
 
   @pending
   @manage_references

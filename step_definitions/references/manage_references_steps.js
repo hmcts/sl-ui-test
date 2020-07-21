@@ -2,7 +2,11 @@ Given(/^I am on judicial office holder Page$/, function () {
     throw new Error('Not implemented yet');
 });
 
-Given(/^Hearing are setup$/, function () {
+Given(/^a hearing for tomorrow is created$/, function () {
+
+});
+
+Given(/^a Judicial Holder is created$/, function () {
 
 });
 
@@ -150,3 +154,6 @@ Then(/^the judicial office holder can be identified as Part Time$/, function () 
     throw new Error('Not implemented yet');
 });
 
+Given(/^Multi\-Day Hearing is created$/, function () {
+
+});
