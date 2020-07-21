@@ -32,4 +32,3 @@ Feature: Identify Judicial Office Holder Working Patterns and allocate to hearin
     When  the hearing matching with the criteria is found
     Then  the judicial office holder can only be assigned to the matching hearing
     And   the judicial office holder can be identified as Part Time
-
