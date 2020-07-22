@@ -1,4 +1,5 @@
-# FeatureID  EpicID StoryID TestID
+#  TODO : We have Tickets,Case Type but no Ticket Type in Entity Diagram,
+#   Created some skeleton scenarios, needs re-visiting
 Feature: Judicial Office Holder holding the right ticket type (authority) can be assigned to a hearing
 
   As a Solution
@@ -28,4 +29,3 @@ Feature: Judicial Office Holder holding the right ticket type (authority) can be
     Given I am on judicial office holder Page
     When I am mot assigned to any ticket
     Then judicial office holder can't be assigned to the hearing
-

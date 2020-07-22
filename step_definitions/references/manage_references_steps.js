@@ -142,14 +142,6 @@ Given(/^the judicial office holder is Full Time$/, function () {
     throw new Error('Not implemented yet');
 });
 
-Then(/^the judicial office holder can be identified as Full Time$/, function () {
-    throw new Error('Not implemented yet');
-});
-
-Given(/^the judicial office holder is Part Time$/, function () {
-    throw new Error('Not implemented yet');
-});
-
 Then(/^the judicial office holder can be identified as Part Time$/, function () {
     throw new Error('Not implemented yet');
 });
@@ -185,3 +177,28 @@ Given(/^I add the ticket types$/, function () {
 Given(/^I update the ticket types$/, function () {
     throw new Error('Not implemented yet');
 });
+
+When(/^I navigate to the hearing schedule page$/, function () {
+    throw new Error('Not implemented yet');
+});
+
+When(/^I view a hearing that is on Monday within standard working hours$/, function () {
+    throw new Error('Not implemented yet');
+});
+
+Given(/^the judicial office holder is Part Time$/, function () {
+    throw new Error('Not implemented yet');
+});
+
+When(/^I view a hearing that is on Tuesday at 11AM$/, function () {
+    throw new Error('Not implemented yet');
+});
+
+When(/^I view a hearing that is on Saturday within standard working hours$/, function () {
+    throw new Error('Not implemented yet');
+});
+
+When(/^I view a hearing that is on Friday at 11AM$/, function () {
+    throw new Error('Not implemented yet');
+});
+

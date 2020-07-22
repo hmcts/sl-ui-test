@@ -1,4 +1,3 @@
-# FeatureID  EpicID StoryID TestID
 Feature: Judicial Office Holder as both Salaried and Fee Paid
 
   As a Solution
@@ -19,5 +18,5 @@ Feature: Judicial Office Holder as both Salaried and Fee Paid
     And  judicial office holder can be assigned to a hearing
     And  judicial office holder can be identified as Salaried
     And  I update the payment type as Fee Paid
-    When judicial office holder can be assigned to a hearing
-    Then judicial office holder can be identified as Fee Paid
+    When I navigate to the hearing schedule page
+    Then  judicial office holder can be assigned to a hearing

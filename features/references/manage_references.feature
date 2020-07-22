@@ -1,4 +1,3 @@
-# FeatureID  EpicID StoryID TestID
 Feature: Consume real time reference data about jurisdictions, services, case, hearing types And resources
 
   As A... System Admin
