@@ -158,3 +158,29 @@ Given(/^Multi\-Day Hearing is created$/, function () {
 
 });
 
+Given(/^the hearing is assigned to a ticket$/, function () {
+
+});
+
+When(/^I am assigned to a ticket$/, function () {
+    throw new Error('Not implemented yet');
+});
+
+Then(/^judicial office holder can be assigned to a hearing for the ticket type$/, function () {
+    throw new Error('Not implemented yet');
+});
+
+When(/^I am mot assigned to any ticket$/, function () {
+    throw new Error('Not implemented yet');
+});
+
+Then(/^judicial office holder can't be assigned to the hearing$/, function () {
+    throw new Error('Not implemented yet');
+});
+
+Given(/^I add the ticket types$/, function () {
+    throw new Error('Not implemented yet');
+});
+Given(/^I update the ticket types$/, function () {
+    throw new Error('Not implemented yet');
+});
