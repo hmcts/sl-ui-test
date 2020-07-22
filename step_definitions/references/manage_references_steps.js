@@ -181,6 +181,7 @@ Then(/^judicial office holder can't be assigned to the hearing$/, function () {
 Given(/^I add the ticket types$/, function () {
     throw new Error('Not implemented yet');
 });
+
 Given(/^I update the ticket types$/, function () {
     throw new Error('Not implemented yet');
 });
