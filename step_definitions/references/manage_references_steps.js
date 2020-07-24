@@ -202,3 +202,11 @@ When(/^I view a hearing that is on Friday at 11AM$/, function () {
     throw new Error('Not implemented yet');
 });
 
+Given(/^Single Full day Hearing is created$/, function () {
+
+});
+
+Given(/^Single Partial day Hearing is created$/, function () {
+
+});
+

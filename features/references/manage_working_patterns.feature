@@ -6,6 +6,8 @@ Feature: Identify Judicial Office Holder Working Patterns and allocate to hearin
 
   Background:
     Given Multi-Day Hearing is created
+    And   Single Full day Hearing is created
+    And   Single Partial day Hearing is created
     And   a Judicial Holder is created
 
   @pending
