@@ -3,4 +3,6 @@ node_modules/
 functional-output/
 test-report/
 .idea/
+.DS_Store
+
 
