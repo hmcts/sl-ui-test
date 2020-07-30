@@ -30,3 +30,7 @@ When('I click on Signout', () => {
   // From "features/access.feature" {"line":11,"column":5}
   I.click({ css: 'a[href*="LogoutAction.action"]'});
 });
+
+Given(/^I am logged in as Listing Officer$/, function () {
+
+});
