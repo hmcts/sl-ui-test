@@ -15,7 +15,7 @@ Given('there is a login box', () => {
 
 Given('I submit my login credentials', () => {
   // From "features/access.feature" {"line":9,"column":5}
-  login.sendForm('Listing-admin','password');
+  login.sendForm('','');
 });
 
 Given('I am on my personal dashboard', () => {
