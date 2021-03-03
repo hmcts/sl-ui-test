@@ -17,7 +17,7 @@ When('I add all the valid details', () => {
     addCase.selectHearingCenter();
     addCase.caseReceivedDate();
     addCase.selectHMCTSCaseID();
-    addCase.enterCaseName();a
+    addCase.enterCaseName();
     addCase.clickSaveAndAddListingRequirements();
     listingRequirements.selectSessionType();
     listingRequirements.selectListingHearingType();
