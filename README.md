@@ -33,7 +33,6 @@ To enhance this low maintenance overhead objective, the page object model snippe
 * All configuration  is stored in _codecept.conf.js_
 * Pending tag used to skip tests
 
-
 ```
 ├── features
 │   └── access

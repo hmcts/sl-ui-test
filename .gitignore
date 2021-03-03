@@ -1,8 +1,7 @@
+#Add ingnored files here
 *.code-workspace
 node_modules/
 functional-output/
 test-report/
 .idea/
 .DS_Store
-
-

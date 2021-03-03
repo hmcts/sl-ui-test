@@ -1,8 +1,6 @@
 const {I, login, addCase, listingRequirements, leftMenu, caseSearch} = inject();
-// Add in your custom step files
 
 Given('I am on add new page', async () => {
-    // From "features/access.feature" {"line":7,"column":5}
     I.amOnPage('/');
     I.saveScreenshot("Login_Image.png");
     I.seeElement(login.fields.loginbox);
@@ -19,7 +17,7 @@ When('I add all the valid details', () => {
     addCase.selectHearingCenter();
     addCase.caseReceivedDate();
     addCase.selectHMCTSCaseID();
-    addCase.enterCaseName();
+    addCase.enterCaseName();a
     addCase.clickSaveAndAddListingRequirements();
     listingRequirements.selectSessionType();
     listingRequirements.selectListingHearingType();
