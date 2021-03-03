@@ -4,7 +4,7 @@ Feature: create a case
   So that I can create the application
 
   @E2E1
-  Scenario: successful user login and logOut
+  Scenario: Create a user and search for the user and logout
     Given I am on add new page
     When I add all the valid details
     And I submit the data
