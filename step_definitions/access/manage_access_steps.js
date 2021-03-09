@@ -20,7 +20,6 @@ Given('I submit my login credentials', () => {
 
 Given('I am on my personal dashboard', () => {
   // From "features/access.feature" {"line":10,"column":5}
-  I.seeElement({css: '#menu > li.h6'});
   I.seeElement({ css: 'a[href*="LogoutAction.action"]'});
   I.saveScreenshot("Dashboard_Image.png");
   I.seeVisualDiff("Dashboard_Image.png");
